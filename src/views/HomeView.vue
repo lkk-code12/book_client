@@ -1,18 +1,13 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+    <div>
+        <h1>This is home page</h1>
+        <!-- <form @submit.prevent="submit">
+            <input type="file" @change="onChange">
+            <input type="submit" value="Upload" @click="upload">
+        </form> -->
+        <input type="file" @change="onChange">
+        <input type="submit" value="Upload" @click="upload">
+    </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-@Options({
-  components: {
-    HelloWorld,
-  },
-})
-export default class HomeView extends Vue {}
-</script>
+<script src="../../src/assets/js/home.js"></script>
